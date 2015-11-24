@@ -9,13 +9,9 @@ public class PageObjectPatternTest extends AppiumTest {
 
     @org.junit.Test
     public void pageObject() throws Exception {
-        String myText = "Eugene Mobile";
-        logger.info("Entry to pageObject");
-        //DisplayMessage.actionBar();
-
-        HomePage.mainActivity(myText);
-        String text= DisplayMessage.activityDisplay();
-        Assert.assertEquals(myText, text);
+        Assert.assertEquals(HomePage.settingsText, HomePage.actionBar());
+        HomePage.mainActivity(HomePage.myText);
+        Assert.assertEquals(HomePage.myText, DisplayMessage.activityDisplay());
 
         //DisplayMessage.actionBar();
 

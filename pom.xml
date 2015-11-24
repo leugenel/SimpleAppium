@@ -51,12 +51,7 @@ https://github.com/appium/appium/blob/2fe7ea7b098ba2145e3c7b4cc31276a3e26921ec/s
      Sauce JUnit is contained in saucelabs/sauce-java
      https://github.com/saucelabs/sauce-java/tree/master/junit
     -->
-    <dependency>
-      <groupId>com.saucelabs</groupId>
-      <artifactId>sauce_junit</artifactId>
-      <version>2.1.3</version>
-      <scope>test</scope>
-    </dependency>
+
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
@@ -81,17 +76,4 @@ https://github.com/appium/appium/blob/2fe7ea7b098ba2145e3c7b4cc31276a3e26921ec/s
       </plugin>
     </plugins>
   </build>
-
-  <repositories>
-    <repository>
-      <id>saucelabs-repository</id>
-      <url>https://repository-saucelabs.forge.cloudbees.com/release</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
 </project>
